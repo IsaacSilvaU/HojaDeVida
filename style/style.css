@@ -8,159 +8,265 @@
 html {
   font-size: 62.5%;
   font-family: sans-serif;
-  background-color: rgb(26, 21, 17);
+  text-align: justify;
+  background-color: rgb(0, 102, 116);
+}
+#columnas {
+  position: relative;
+  width: 100%;
+  max-width: 1500px;
+  min-height: 1000px;
+  margin: 50px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0.1);
 }
 
-#bloque2 {
-  display: grid;
-  grid-template-columns: 1fr;
-  background-color: white;
-  margin-top: 3rem;
-  position: relative;
-  width: 40em;
-  height: 97rem;
+#columnas .bloque1 {
+  background-color: #00405e;
+  color: white;
+  padding: 40px;
 }
+
 .nombre {
-  margin: 3rem;
-  align-items: left;
   position: relative;
-  width: 20em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(25, 255, 0.2);
 }
 .nombre h1 {
-  font-size: 5rem;
+  color: white;
+  font-size: 4rem;
   margin-bottom: 1rem;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  text-align: center;
 }
+
+.nombre h3 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
 .nombre figure {
-  display: flex;
-  position: absolute;
-  margin-left: 24rem;
-  top: 0.5rem;
+  position: relative;
+  margin-bottom: 1.5rem;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.nombre figure img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .datos {
-  top: 5rem;
-  margin: 4rem;
-  align-items: left;
-  position: relative;
-  width: 25em;
+  color: White;
+  text-transform: uppercase;
+  font-size: 1px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
 }
+.datos ul {
+  position: relative;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(25, 255, 0.2);
+}
+.datos ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px;
+  cursor: pointer;
+}
+
 .datos h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
+  margin-top: 5rem;
+  text-align: center;
 }
 .datos li {
   margin-left: 1rem;
   margin-top: 0.5rem;
 }
+.datos ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #03a9f4;
+}
+.datos ul li span {
+  color: white;
+}
 .proyectos {
-  margin-bottom: 3rem;
-  margin-left: 3rem;
-  align-items: left;
+  color: White;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   position: relative;
-  text-align: center;
-  width: 35em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .proyectos h2 {
   font-size: 1.8rem;
-  margin-top: 10rem;
+  margin-top: 3rem;
 }
 .proyectos h3 {
   display: flex;
   justify-content: center;
 }
 .proyectos a {
-  display: flex;
   text-align: center;
   padding: 1rem;
 }
 .proyectos2 {
   display: flex;
-  padding-right: 11rem;
+  align-items: center;
   padding-top: 2rem;
 }
-
-#bloque1 {
-  color: white;
-  display: grid;
-  position: absolute;
-  top: 4rem;
-  margin-left: 51rem;
+.proyectos2 h2 {
+  align-items: center;
+  padding-top: 2rem;
 }
-.perfil {
-  margin-right: 60%;
-  margin-left: 0rem;
+.proyectos2 figure {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.proyectos2 img {
+  position: relative;
+  align-items: center;
+  text-align: center;
+  margin-left: 25%;
+  margin-bottom: 2rem;
+  width: 150px;
+  height: 150px;
+}
+
+/*-----------------------COLUMNA IZQUIERDA -------------------*/
+
+#columnas .bloque2 {
+  position: relative;
+  background: white;
+  padding: 40px;
+}
+.bloque2 .perfil {
+  position: relative;
+  align-items: center;
+  margin-right: 50%;
   text-align: left;
   word-break: break-all;
+  word-break: normal;
 }
-.perfil h2 {
+.bloque2 li {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  word-break: normal;
+}
+.bloque2 p {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  word-break: normal;
+}
+.bloque2 h2 {
+  color: #00405e;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   margin-bottom: 1rem;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
 }
 .especialidad {
   position: absolute;
-  margin-right: 40%;
-  margin-left: 45%;
+  align-items: center;
+  margin-left: 55%;
+  top: 40px;
   text-align: left;
   word-break: break-all;
-}
-.especialidad h2 {
-  margin-bottom: 1rem;
-  font-size: 1.8rem;
+  word-break: normal;
 }
 .especialidad li {
   text-align: left;
   margin-bottom: 0.4rem;
+  letter-spacing: 1px;
 }
 
 .experiencia {
+  display: flex;
   position: relative;
-  top: 7rem;
-  margin-right: 13rem;
   word-break: break-all;
+  top: 6rem;
+  word-break: break-all;
+  word-break: normal;
 }
-.experiencia h2 {
-  margin-bottom: 0rem;
-  font-size: 1.8rem;
+
+.experiencia .exp {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0px;
 }
-.experiencia h3 {
+
+.experiencia .exp h3 {
+  color: #005c86;
+  text-transform: uppercase;
   margin-bottom: 0.6rem;
   margin-top: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  letter-spacing: 1px;
 }
-.experiencia h4 {
-  font-size: 1.3rem;
+.experiencia .exp h4 {
+  color: #00405e;
+  text-transform: uppercase;
+  font-size: 1.4rem;
   margin-bottom: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.estudios h2 {
+  position: relative;
+  margin-top: 10rem;
+  word-break: break-all;
+  letter-spacing: 1px;
 }
 
 .estudios {
   position: relative;
-  top: 10rem;
-  margin-right: 66rem;
+  margin-top: 10rem;
   word-break: break-all;
-}
-.estudios h2 {
-  margin-bottom: 0rem;
+  letter-spacing: 1px;
   font-size: 1.8rem;
 }
-.estudios h3 {
+
+.estudios .est h3 {
+  color: #005c86;
+  text-transform: uppercase;
   margin-bottom: 0.6rem;
-  margin-top: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  letter-spacing: 1px;
 }
-.estudios li {
+.estudios .est li {
   text-align: left;
   margin-bottom: 0.4rem;
 }
 .meritos {
   display: flex;
   position: relative;
-  top: 1.8rem;
+  margin-top: 5rem;
   word-break: break-all;
 }
 .meritos li {
   text-align: left;
   margin-bottom: 0.4rem;
-}
-.meritos h2 {
-  margin-bottom: 0.5rem;
-  font-size: 1.8rem;
 }
