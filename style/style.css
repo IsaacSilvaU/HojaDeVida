@@ -81,13 +81,11 @@ html {
 #bloque1 {
   color: white;
   display: grid;
-  grid-template-columns: 1fr;
   position: absolute;
   top: 4rem;
   margin-left: 51rem;
 }
 .perfil {
-  display: flex;
   margin-right: 60%;
   margin-left: 0rem;
   text-align: left;
@@ -98,7 +96,6 @@ html {
   font-size: 1.8rem;
 }
 .especialidad {
-  display: flex;
   position: absolute;
   margin-right: 40%;
   margin-left: 45%;
@@ -115,7 +112,6 @@ html {
 }
 
 .experiencia {
-  display: flex;
   position: relative;
   top: 7rem;
   margin-right: 13rem;
@@ -136,7 +132,6 @@ html {
 }
 
 .estudios {
-  display: flex;
   position: relative;
   top: 10rem;
   margin-right: 66rem;
