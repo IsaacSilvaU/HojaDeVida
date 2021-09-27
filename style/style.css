@@ -230,7 +230,7 @@ html {
   display: flex;
   position: relative;
   word-break: break-all;
-  top: 6rem;
+  top: 3rem;
   word-break: break-all;
   word-break: normal;
 }
@@ -245,7 +245,7 @@ html {
   color: #005c86;
   text-transform: uppercase;
   margin-bottom: 0.6rem;
-  margin-top: 2rem;
+  margin-top: rem;
   font-size: 1.7rem;
   letter-spacing: 1px;
 }
@@ -257,21 +257,21 @@ html {
   letter-spacing: 1px;
 }
 
-.estudios h2 {
-  position: relative;
-  margin-top: 10rem;
-  word-break: break-all;
-  letter-spacing: 1px;
-}
-
 .estudios {
   position: relative;
-  margin-top: 10rem;
+  margin-top: 5rem;
   word-break: break-all;
   letter-spacing: 1px;
   font-size: 1.8rem;
 }
+.estudios .est h2 {
+  position: relative;
+  margin-top: 10rem;
+  word-break: break-all;
+  letter-spacing: 1px;
+}
 .estudios .est h3 {
+  margin-top: 3rem;
   color: #005c86;
   text-transform: uppercase;
   margin-bottom: 0.6rem;
@@ -292,7 +292,7 @@ html {
 .meritos {
   display: flex;
   position: relative;
-  margin-top: 5rem;
+  margin-top: 4rem;
   word-break: break-all;
 }
 .meritos li {
