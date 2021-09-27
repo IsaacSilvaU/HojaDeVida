@@ -9,6 +9,7 @@ html {
   font-size: 62.5%;
   font-family: sans-serif;
   text-align: justify;
+  color: #002f44;
   background-color: rgb(0, 102, 116);
 }
 #columnas {
@@ -89,8 +90,16 @@ html {
   list-style: none;
   margin: 10px;
   cursor: pointer;
+  font-size: 1.2rem;
 }
-
+.datos a {
+  color: white;
+  position: relative;
+  list-style: none;
+  cursor: pointer;
+  align-items: left;
+  font-size: 1.1rem;
+}
 .datos h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
@@ -135,11 +144,25 @@ html {
 .proyectos2 {
   display: flex;
   align-items: center;
-  padding-top: 2rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.proyectos2 .vacio {
+  padding-left: 1.5rem;
+}
+.proyectos2 a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
 }
 .proyectos2 h2 {
   align-items: center;
-  padding-top: 2rem;
+}
+.proyectos2 td {
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .proyectos2 figure {
   display: flex;
@@ -248,12 +271,18 @@ html {
   letter-spacing: 1px;
   font-size: 1.8rem;
 }
-
 .estudios .est h3 {
   color: #005c86;
   text-transform: uppercase;
   margin-bottom: 0.6rem;
   font-size: 1.7rem;
+  letter-spacing: 1px;
+}
+.estudios .est h4 {
+  color: #00405e;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+  font-size: 1.4rem;
   letter-spacing: 1px;
 }
 .estudios .est li {
