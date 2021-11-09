@@ -195,6 +195,7 @@ html {
   word-break: normal;
 }
 .bloque2 li {
+  list-style: none;
   font-size: 1.4rem;
   letter-spacing: 1px;
   word-break: normal;
