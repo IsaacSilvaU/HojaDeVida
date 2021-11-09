@@ -11,7 +11,33 @@ html {
   text-align: justify;
   color: #002f44;
   background-color: rgb(0, 102, 116);
+
+  background-image: linear-gradient(
+    135deg,
+    #00b7d4,
+    #505488,
+    #2f3f80,
+    #161569,
+    #009988,
+    #00b341,
+    #7bc62d
+  );
+  background-size: 500%;
+  animation: fondo_animado 10s infinite;
 }
+
+@keyframes fondo_animado {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 #columnas {
   position: relative;
   width: 100%;
