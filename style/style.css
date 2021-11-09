@@ -1,0 +1,302 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+}
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+  text-align: justify;
+  color: #002f44;
+  background-color: rgb(0, 102, 116);
+}
+#columnas {
+  position: relative;
+  width: 100%;
+  max-width: 1500px;
+  min-height: 1000px;
+  margin: 50px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0.1);
+}
+
+#columnas .bloque1 {
+  background-color: #00405e;
+  color: white;
+  padding: 40px;
+}
+
+.nombre {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(25, 255, 0.2);
+}
+.nombre h1 {
+  color: white;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.nombre h3 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.nombre figure {
+  position: relative;
+  margin-bottom: 1.5rem;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.nombre figure img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.datos {
+  color: White;
+  text-transform: uppercase;
+  font-size: 1px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.datos ul {
+  position: relative;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(25, 255, 0.2);
+}
+.datos ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.datos a {
+  color: white;
+  position: relative;
+  list-style: none;
+  cursor: pointer;
+  align-items: left;
+  font-size: 1.1rem;
+}
+.datos h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  margin-top: 5rem;
+  text-align: center;
+}
+.datos li {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+.datos ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #03a9f4;
+}
+.datos ul li span {
+  color: white;
+}
+.proyectos {
+  color: White;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.proyectos h2 {
+  font-size: 1.8rem;
+  margin-top: 3rem;
+}
+.proyectos h3 {
+  display: flex;
+  justify-content: center;
+}
+.proyectos a {
+  text-align: center;
+  padding: 1rem;
+}
+.proyectos2 {
+  display: flex;
+  align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.proyectos2 .vacio {
+  padding-left: 1.5rem;
+}
+.proyectos2 a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+}
+.proyectos2 h2 {
+  align-items: center;
+}
+.proyectos2 td {
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.proyectos2 figure {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.proyectos2 img {
+  position: relative;
+  align-items: center;
+  text-align: center;
+  margin-left: 25%;
+  margin-bottom: 2rem;
+  width: 150px;
+  height: 150px;
+}
+
+/*-----------------------COLUMNA IZQUIERDA -------------------*/
+
+#columnas .bloque2 {
+  position: relative;
+  background: white;
+  padding: 40px;
+}
+.bloque2 .perfil {
+  position: relative;
+  align-items: center;
+  margin-right: 50%;
+  text-align: left;
+  word-break: break-all;
+  word-break: normal;
+}
+.bloque2 li {
+  list-style: none;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  word-break: normal;
+}
+.bloque2 p {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  word-break: normal;
+}
+.bloque2 h2 {
+  color: #00405e;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  font-size: 1.9rem;
+}
+.especialidad {
+  position: absolute;
+  align-items: center;
+  margin-left: 55%;
+  top: 40px;
+  text-align: left;
+  word-break: break-all;
+  word-break: normal;
+}
+.especialidad li {
+  text-align: left;
+  margin-bottom: 0.4rem;
+  letter-spacing: 1px;
+}
+
+.experiencia {
+  display: flex;
+  position: relative;
+  word-break: break-all;
+  top: 3rem;
+  word-break: break-all;
+  word-break: normal;
+}
+
+.experiencia .exp {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0px;
+}
+
+.experiencia .exp h3 {
+  color: #005c86;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+  margin-top: rem;
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+}
+.experiencia .exp h4 {
+  color: #00405e;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.estudios {
+  position: relative;
+  margin-top: 5rem;
+  word-break: break-all;
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+}
+.estudios .est h2 {
+  position: relative;
+  margin-top: 10rem;
+  word-break: break-all;
+  letter-spacing: 1px;
+}
+.estudios .est h3 {
+  margin-top: 3rem;
+  color: #005c86;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+}
+.estudios .est h4 {
+  color: #00405e;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+.estudios .est li {
+  text-align: left;
+  margin-bottom: 0.4rem;
+}
+.meritos {
+  display: flex;
+  position: relative;
+  margin-top: 4rem;
+  word-break: break-all;
+}
+.meritos li {
+  text-align: left;
+  margin-bottom: 0.4rem;
+}
